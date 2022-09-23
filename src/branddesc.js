@@ -1,5 +1,5 @@
 import React from 'react';
-// import Carimage from './carimage.js';
+import Carimage from './carimage.js';
 
 function Branddesc() {
     return(
@@ -12,6 +12,7 @@ function Branddesc() {
                     <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. 
                         Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
                 </div>
+                <Carimage />
         </div>
         </>
     )

@@ -1,5 +1,5 @@
 // import React from 'react';
-// import carimg from 'rentcar-app/public/img_car.png'
+// import carimg from './src/img_car.png'
 
 // function Carimage() {
 //     return (
