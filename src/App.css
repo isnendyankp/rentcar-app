@@ -1,5 +1,8 @@
-.App {
+.Landpage {
   text-align: center;
+  width: 1440px;
+  height: 500px; 
+  background: #F1F3FF;; 
 }
 
 .App-logo {
@@ -35,4 +38,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Branddesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: 136px;
+}
+
+#textdesc {
+  width: 468px;
+  height: 60px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+#brand-text {
+  width: 568px;
+  height: 108px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  margin-top: 177px;
+}
+.servicecont {
+  width: 468px;
+  height: 72px;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 765px;
+  margin-right: 207px;
+}
+#desctitle {
+width: 468px;
+height: 72px;
+text-align: left;
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+margin-left: 0px;
+margin-bottom: 0px;
+}
+
+#descpar {
+width: 468px;
+height: 80px;
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+text-align: left;
+margin-top: 24px;
+}
+
+#servicelist {
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+text-align: left;
+margin-top: 18px;
+/* list-style-image: url('rentcar-app/public/Group_53.png'); */
 }

@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbarBrand {
+  width: 100px;
+  height: 34px;
+  background-color: #0D28A6;
+  margin-top: 25px;
+  margin-left: 136px;
+}
+.navbar-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#navbar-item {
+  text-decoration: none;
+  margin-right: 32px;
+  color: rgb(0, 0,0);
+  font-family: 'Arial';
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 24px;
+}
