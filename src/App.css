@@ -1,52 +1,37 @@
+
 .Landpage {
   text-align: center;
-  width: 1440px;
-  height: 500px; 
+  width: 100%;
+  height: 510px; 
   background: #F1F3FF;; 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbarBrand{
+  margin-left: 270px;
+}
+.navbar-parent {
+  margin-right: 249px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .Branddesc {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: left;
   margin-left: 136px;
 }
-
+.brandtextcont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 136px;
+  margin-top: -50px;
+}
+#carimg {
+  width: 704px;
+  height: 407px;
+  margin-left: 32px;
+  margin-right: 0px;
+  margin-top: 53px;
+}
 #textdesc {
   width: 468px;
   height: 60px;
@@ -57,6 +42,7 @@
   line-height: 20px;
   margin-top: 16px;
 }
+
 #brand-text {
   width: 568px;
   height: 108px;
@@ -66,15 +52,29 @@
   font-size: 36px;
   line-height: 150%;
   margin-top: 177px;
+  margin-left: 0;
 }
+
 .servicecont {
-  width: 468px;
-  height: 72px;
   margin-top: 140px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#serviceimg {
+  width: 459px;
+  height: 428px;
+  margin-left: 300px;
+  margin-right: 100px;
+  }
+
+#textcont {
+  width: 468px;
+  height: 72px;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 765px;
+  margin-left: 150px;
   margin-right: 207px;
 }
 #desctitle {
@@ -86,8 +86,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 36px;
-margin-left: 0px;
-margin-bottom: 0px;
+margin-right: 200px;
 }
 
 #descpar {
@@ -100,6 +99,7 @@ font-size: 14px;
 line-height: 20px;
 text-align: left;
 margin-top: 24px;
+margin-right: 200px;
 }
 
 #servicelist {
@@ -110,5 +110,312 @@ font-size: 14px;
 line-height: 20px;
 text-align: left;
 margin-top: 18px;
-/* list-style-image: url('rentcar-app/src/Group_53.png'); */
+list-style-image: url('./Group_53.png');
+}
+.why-cont {
+  margin-top: 100px;
+  text-align: left;
+  margin-left: 280px;
+}
+#whytitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#whydesc {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 45px;
+  margin-top:16px;
+}
+
+.cardcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.icons {
+  width: 268px;
+  height: 196px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 40px;
+}
+
+#cardtitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 16px;
+}
+
+#carddesc {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.testicont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-content: center;
+}
+
+#testtitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#testdesc {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.carousel {
+  width: 80%;
+  margin-left: 170px;
+  height: 500px;
+  background: rgb(255, 255, 255);
+}
+
+.custom-tag {
+  color: red;
+}
+#carBtn {
+  color: rgb(0, 0, 0);
+}
+.rentbanner-cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 270px;
+  width: 1168px;
+  height: 326px;
+  margin-top: 100px;
+  background: #0D28A6;
+  border-radius: 13px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  padding-top: 64px;
+}
+#renttitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+#rentdesc {
+  width:468px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 65px;
+}
+
+#rentBtn {
+  width: 140px;
+  height: 36px;
+  margin-top: 52px;
+  background: #5CB85F;
+  border-radius: 2px;
+  border: none;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.faq-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.faqtext {
+  margin-top: 104px;
+  text-align: left;
+  margin-left: 270px;
+}
+
+#faqtitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#faqdesc {
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.faq-drop {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.item {
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+  width: 668px;
+  height: 56px;
+  padding-left: 24px;
+  padding-bottom: 0;
+  margin-right: 136px;
+  padding-right: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.question {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.answer {
+  padding-top: 0;
+  font-size: 12px;
+  font-family: 'Arial';
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0,1,0,1);
+  max-height: 0;
+}
+
+.answer.show {
+  margin-left: 0px;
+  width: 640px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  height: auto;
+  transition: all 0.3s cubic-bezier(0,1,0,1);
+  max-height: 9999px;
+  background-color: #D0D0D0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#arrow {
+  width: 18px;
+  height: 9px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.Menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: 86px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#footer-item {
+  margin-bottom: 16px;
+}
+.address {
+  text-align: left;
+  margin-left: 136px;
+  margin-top: 150px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#footer-item {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.connect-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: 136px;
+  text-align: left;
+  cursor: pointer;
+}
+#connect {
+  margin-bottom: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+#f-icons {
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+.copyright {
+  margin-top: 150px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 86px;
+}
+
+#footer-brand {
+  margin-left: 0;
+}
+
+#cBtn {
+  margin-top: 24px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin-left: 10px;
+  width: 32px;
+  height: 32px; 
+}
+
+#cBtn:hover {
+  width: 32px;
+  height: 32px; 
+  border-radius: 40%;
+  background: #5CB85F;
+  margin-left: 10px;
 }

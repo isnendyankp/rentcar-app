@@ -1,8 +1,12 @@
+import React from "react";
+import Serviceimg from './img_service.png'
 
 function Servicedesc() {
     return(
         <>
         <div className="servicecont">
+        <img src={Serviceimg} alt="" id='serviceimg' />
+            <div id="textcont">
             <div id="desctitle">
                 <p>Best Car Rental for any kind of trip in (Lokasimu)!</p>
             </div>
@@ -18,7 +22,9 @@ function Servicedesc() {
                         <li>Layanan Airport Transfer / Drop In Out</li>
                     </ul>
                 </div>
+                </div>
         </div>
+        
         </>
     )
 }
