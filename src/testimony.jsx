@@ -1,6 +1,5 @@
 import React from "react";
-// import Carous from "./carouselb";
-// import Example from "./carouselb";
+
 
 function Testimony() {
     return (

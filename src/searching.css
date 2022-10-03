@@ -248,6 +248,10 @@ height: 36px;
   margin-left: 24px;
 }
 
+#input-search2 {
+  margin-left: 24px;
+}
+
 @media screen and (max-width:414px) {
   .form-cont {
     display: flex;
