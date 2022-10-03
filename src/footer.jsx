@@ -1,9 +1,9 @@
 import React from "react";
-import facebook from './icon_facebook.png'
-import twitter from './icon_twitter.png'
-import instagram from './icon_instagram.png'
-import twitch from './icon_twitch.png'
-import mail from './icon_mail.png'
+import facebook from './images/icon_facebook.png'
+import twitter from './images/icon_twitter.png'
+import instagram from './images/icon_instagram.png'
+import twitch from './images/icon_twitch.png'
+import mail from './images/icon_mail.png'
 function Footer() {
     return (
         <>

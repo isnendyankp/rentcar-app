@@ -4,7 +4,7 @@ import './index.css';
 import Landingpage from './App';
 // import Searching from './searchingpage';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,0 +1,47 @@
+.nav-container {
+    text-align: center;
+    width: 100%;
+    height: 510px; 
+    background: #F1F3FF;
+  }
+  
+  .mb-3 {
+    visibility: hidden;
+  }
+
+  .half-canvas {
+    width: 50% !important;
+  }
+
+  .navbar-parent {
+    visibility: hidden;
+  }
+
+  .link {
+    margin-top: -225px;
+}
+
+  @media screen and (max-width: 414px) {
+    .mb-3 {
+        visibility: visible;
+      }
+      .navbarBrand{
+        margin-left: 16px;
+      }
+      .nav-container {
+        text-align: center;
+        width: 100%;
+        height: 657px; 
+        background: #F1F3FF;
+      }
+      .link {
+        margin-top: auto;
+    }
+    .toggle {
+        margin-left: 0;
+        margin-top: -560px;
+        margin-right: 0px;
+        border: none;
+    }
+  }
+  

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Arrowd from './img_221758.png'
-import Arrowu from './img_354911.png'
+import Arrowd from './images/img_221758.png'
+import Arrowu from './images/img_354911.png'
 
 function Faq() {
     const [selected, setSelected] = useState(null);
@@ -14,7 +14,7 @@ function Faq() {
     }
     return (
         <>
-        <div className="faq-cont">
+        <div className="faq-cont" id="faq">
             <div className="faqtext">
                 <p id="faqtitle">Frequently Asked Question</p>
                 <p id="faqdesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

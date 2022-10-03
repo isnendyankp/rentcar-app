@@ -1,10 +1,10 @@
 import React from "react";
-import Serviceimg from './img_service.png'
+import Serviceimg from './images/img_service.png'
 
 function Servicedesc() {
     return(
         <>
-        <div className="servicecont">
+        <div className="servicecont" id="service">
         <img src={Serviceimg} alt="" id='serviceimg' />
             <div id="textcont">
             <div id="desctitle">

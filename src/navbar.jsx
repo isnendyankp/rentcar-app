@@ -1,20 +1,47 @@
 import React from "react";
-import './App.css'
+import './navbar.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-function Navbar() {
+
+function NavBar() {
     return(
         <>
-        <div className="nav-container">
+        <header className="nav-container">
         <div className="navbarBrand"></div>
-        <div className="navbar-parent">
-            <a href='/'id="navbar-item">Our Services</a>
-            <a href="/" id="navbar-item">Why Us</a>
-            <a href="/" id="navbar-item">Testimonial</a>
-            <a href="/" id="navbar-item">FAQ</a>
-        </div>
-        </div>
+        {['lg'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="mb-3">
+          <Container>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className='toggle'/>
+
+            <Navbar.Offcanvas className='half-canvas'
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  <b>BCR</b>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="link justify-content-end gap-4 me-5 flex-grow-1 pe-3">
+                  <Nav.Link href="#service" smooth>Our Services</Nav.Link>
+                  <Nav.Link href="#whyus" smooth>Why Us</Nav.Link>
+                  <Nav.Link href="#testimony" smooth>Testimony</Nav.Link>
+                  <Nav.Link href="#faq" smooth>FAQ</Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+        </header>
+        
         </>
     )
 }
 
-export default Navbar;
+export default NavBar;

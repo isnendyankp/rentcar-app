@@ -1,15 +1,15 @@
 import React from "react";
-import Carousel from "./Testicarsl";
+// import Carous from "./carouselb";
+// import Example from "./carouselb";
 
 function Testimony() {
     return (
         <>
-        <div className="testicont">
+        <div className="testicont" id='testimony'>
         <div className="testtext">
             <p id="testtitle">Testimonial</p>
             <p id="testdesc">Berbagai review positif dari para pelanggan kami</p>
         </div>
-            <Carousel />
         </div>
         </>
     )

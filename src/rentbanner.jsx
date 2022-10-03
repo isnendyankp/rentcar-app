@@ -10,7 +10,7 @@ function Rentbanner() {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis hic assumenda exercitationem quo excepturi autem!
             </p>
             </div>
-            <button id="rentBtn">Mulai Sewa Mobil</button>
+            <a href="/selectcar"><button id="rentBtn">Mulai Sewa Mobil</button></a>
         </div>
         </>
     )

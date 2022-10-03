@@ -1,0 +1,128 @@
+.slider-cont {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.img-cont {
+    display: flex;
+    flex-direction: row;
+    width: 619px;
+    height: 270px;
+    background: #F1F3FF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.photo {
+    width: 80px;
+    height: 80px;
+}
+
+.caro-content {
+    margin-left: 46px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 415px;
+    height: 80px;
+}
+
+.crsl-item {
+    display: flex;
+    flex-direction: row;
+}
+.crsl-cont {
+    display:flex;
+    flex-direction: row;
+  }
+
+.c-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+    margin-top: 180px;
+    margin-left: 720px;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+    margin-top: 180px;
+    margin-right: 720px;
+  }
+  .slick-slide {
+    margin: 0 -75px;
+}
+@media screen and  (max-width:414px){
+    .slider-cont {
+        margin-left: 0px;
+      }
+        .img-cont {
+          display: flex;
+          flex-direction: column;
+          width: 328px;
+          height: 392px;
+          background: #F1F3FF;
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 8px;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          margin-left: 15px;
+      }
+      .caro-content {
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 415px;
+        height: 80px;
+        width: 264px;
+        height: 140px;
+      }
+      
+      .crsl-item {
+        display: flex;
+        flex-direction: column;
+      }
+      .crsl-cont {
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+      }
+      .c-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #star{
+        margin-left: 90px;
+      }
+      #review {
+        margin-top: 30px;
+      }
+      .slick-slide {
+        margin: 0 0px;
+    }
+    .slick-prev {
+        left: 3% !important;
+        z-index: 1;
+        margin-top: 230px;
+        margin-left: 140px;
+      }
+      .slick-next {
+        right: 3% !important;
+        z-index: 1;
+        margin-top: 230px;
+        margin-right: 140px;
+      }
+}
