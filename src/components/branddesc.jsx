@@ -1,7 +1,9 @@
 import React from 'react';
-import Carimage from './images/img_car.png';
+// import Fetchapi from './fetchapi';
+import Carimage from '../images/img_car.png';
 
-function Brandsearch() {
+
+function Branddesc() {
     return(
         <>
         <div className="Branddesc">
@@ -12,13 +14,14 @@ function Brandsearch() {
             <div id="textdesc">
                     <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. 
                         Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-                </div>  
+                </div> 
+                <button id="rentBtn1" onClick={(e) => {e.preventDefault(window.location.href= '/selectcar')}}>Mulai Sewa Mobil</button>
                 </div>
                 <img src={Carimage} alt="" id='carimg'/>       
         </div>
-         
+        
         </>
     )
 }
 
-export default Brandsearch;
+export default Branddesc;

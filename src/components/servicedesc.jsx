@@ -1,5 +1,5 @@
 import React from "react";
-import Serviceimg from './images/img_service.png'
+import Serviceimg from '../images/img_service.png'
 
 function Servicedesc() {
     return(

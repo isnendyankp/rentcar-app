@@ -1,7 +1,7 @@
 import React, { useState , useEffect}from "react";
 import axios from "axios";
-import Carcard from "./carCard";
-import './searchingres.css'
+import Carcard from "../components/carCard";
+import '../styles/searchingres.css'
 
 
 export default function Getcar() {

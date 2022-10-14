@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import '../styles/App.css';
 import NavBar from './navbar';
 import Branddesc from './branddesc';
 import Servicedesc from './servicedesc';

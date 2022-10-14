@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick"
-import './App.css';
-import './carousel.css'
+import '../styles/App.css';
+import '../styles/carousel.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import photo1 from './images/img_photo.png'
-import rate from './images/Rate.png'
-import photo2 from './images/img_photo2.png'
+import photo1 from '../images/img_photo.png'
+import rate from '../images/Rate.png'
+import photo2 from '../images/img_photo2.png'
 
 function NextArrow(props) {
   const { className, style, onClick } = props;

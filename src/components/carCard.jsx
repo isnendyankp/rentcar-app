@@ -1,11 +1,9 @@
 import React from "react";
-import './searchingres.css'
+import '../styles/searchingres.css'
 
 function Carcard (props) 
 {
     const { image, carName, carPrice } = props
-
-    
 
     function handleClick(e) {
         e.preventDefault();

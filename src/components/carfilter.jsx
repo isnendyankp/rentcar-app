@@ -1,4 +1,4 @@
-import './searching.css'
+import '../styles/searching.css'
 import React from "react";
 
 

@@ -1,10 +1,10 @@
-import './App.css';
+import '../src/styles/App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Landingpage from './landpage';
-import Searching from './searchingpage';
-import Searchres from './searchresult';
-import Rentpackage from './rentpackage';
+import Landingpage from '../src/components/landpage.jsx';
+import Searching from '../src/components/searchingpage.jsx';
+import Searchres from '../src/components/searchresult.jsx';
+import Rentpackage from '../src/components/rentpackage.jsx';
 
 function App() {
   

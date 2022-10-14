@@ -21,6 +21,34 @@
     margin-top: -225px;
 }
 
+#regisBtn {
+  width: 81px;
+  height: 36px;
+  background: #5CB85F;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+
+}
+
+#regisBtn:hover {
+  width: 81px;
+  height: 36px;
+  background: #46aa49;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+}
+
+#regisBtn:active {
+  width: 81px;
+  height: 36px;
+  background: #9dffad;
+  border-radius: 2px;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
   @media screen and (max-width: 414px) {
     .mb-3 {
         visibility: visible;

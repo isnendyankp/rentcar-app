@@ -1,9 +1,9 @@
 import React from "react";
 import Footer from './footer';
-import './searching.css'
-import Navbar from "./navbar";
+import '../styles/searching.css'
+import Navbar from "../components/navbar";
 import Carfilter from "./carfilter";
-import Brandsearch from "./branddesc-search";
+import Brandsearch from "../components/branddesc-search";
 
 
 function Searching() {

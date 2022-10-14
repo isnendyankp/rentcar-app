@@ -1,6 +1,6 @@
 import React from "react";
-import users from './images/fi_users.png'
-import './package.css'
+import users from '../images/fi_users.png'
+import '../styles/package.css'
 
 function Carpack (props) 
 {

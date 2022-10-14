@@ -1,9 +1,9 @@
 import React from "react";
-import icon1 from './images/icon_complete.png'
-import icon2 from './images/icon_price.png'
-import icon3 from './images/icon_24hrs.png'
-import icon4 from './images/icon_professional.png'
-import './App.css'
+import icon1 from '../images/icon_complete.png'
+import icon2 from '../images/icon_price.png'
+import icon3 from '../images/icon_24hrs.png'
+import icon4 from '../images/icon_professional.png'
+import '../styles/App.css'
 
 function Whyus() {
     return (

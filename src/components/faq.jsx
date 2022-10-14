@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import Arrowd from './images/img_221758.png'
-import Arrowu from './images/img_354911.png'
+import Arrowd from '../images/img_221758.png'
+import Arrowu from '../images/img_354911.png'
 
 function Faq() {
     const [selected, setSelected] = useState(null);

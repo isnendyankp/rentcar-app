@@ -1,9 +1,9 @@
 import React from "react";
-import facebook from './images/icon_facebook.png'
-import twitter from './images/icon_twitter.png'
-import instagram from './images/icon_instagram.png'
-import twitch from './images/icon_twitch.png'
-import mail from './images/icon_mail.png'
+import facebook from '../images/icon_facebook.png'
+import twitter from '../images/icon_twitter.png'
+import instagram from '../images/icon_instagram.png'
+import twitch from '../images/icon_twitch.png'
+import mail from '../images/icon_mail.png'
 function Footer() {
     return (
         <>
@@ -31,7 +31,8 @@ function Footer() {
             </div>
             <div className="copyright">
                 <p>Copyright Binar 2022</p>
-                <div className="navbarBrand" id="footer-brand"></div>
+                <div className="navbarBrand" id="footer-brand" onClick={(e) => {e.preventDefault()
+                window.location.href='/'}}></div>
             </div>
         </footer>
         </>

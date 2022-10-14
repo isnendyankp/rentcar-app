@@ -1,6 +1,6 @@
 import Footer from "./footer";
 import NavBar from "./navbar";
-import './rentpackage.css'
+import '../styles/rentpackage.css'
 import Carpack from "./packagecard";
 import React, { useState , useEffect}from "react";
 import axios from "axios";
@@ -41,26 +41,26 @@ function Rentpackage() {
                 <div className="search-form">
             <div className="name-filter2">
                 <form action="">
-                <label id="label2">Nama Mobil</label><br/>
-                <input type="text" name="carname" placeholder="" className="inputs-rent" id="name"/>
+                <label id="label">Nama Mobil</label><br/>
+                <input type="text" name="carname" placeholder="" className="inputs-rent" id="name" disabled/>
                 </form>
                 </div>
                 <div className="category-cont2">
                 <form>
                 <label id="label">Kategori</label><br />
-                <input type="text" placeholder="" className="inputs-rent" id="in-1"/>
+                <input type="text" placeholder="" className="inputs-rent" id="in-1" disabled/>
             </form>
                     </div>  
                     <div className="price2">
                         <form action="">
                             <label id="label">Harga</label><br />
-                            <input type="text" className="inputs-rent" id="in-2"/>
+                            <input type="text" className="inputs-rent" id="in-2" disabled/>
                         </form>
                         </div>  
                         <div className="status2">
                         <form action="">
                             <label id="label">Status</label><br />
-                            <input type="text" className="inputs-rent" id="in-3"/>
+                            <input type="text" className="inputs-rent" id="in-3" disabled/>
                         </form>
                         </div>
                         </div>
