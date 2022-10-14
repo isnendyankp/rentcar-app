@@ -1,0 +1,86 @@
+.sign-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.signform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.signbrand{
+    width: 100px;
+    height: 34px;
+    background: #CFD4ED;
+    margin-left: -270px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+#title {
+    margin-left: -260px; 
+    margin-bottom: 32px;
+}
+
+#welcome {
+    margin-left: -150px; 
+    margin-bottom: 32px;
+}
+
+#thumbnail{
+    width: 50%;
+}
+.labelsign {
+    font-family: Arial;
+    font-size: 14px;
+}
+.inputsign {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 370px;
+    height: 38.15px;
+    margin-top: 9px;
+    margin-bottom: 16px;
+}
+#signupBtn {
+    width: 370px;
+    height: 36px;
+    background: #0D28A6;
+    border-radius: 2px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+#signupBtn:hover {
+    width: 370px;
+    height: 36px;
+    background: #1b42ee;
+    border-radius: 2px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+#signupq {
+    margin-top: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+#linksignin {
+    color: #0D28A6;
+}
+
+#linksignup {
+    color: #0D28A6;
+}
+
+::placeholder {
+    color: #A5A5A5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+

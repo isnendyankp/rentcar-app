@@ -5,6 +5,8 @@ import Landingpage from '../src/components/landpage.jsx';
 import Searching from '../src/components/searchingpage.jsx';
 import Searchres from '../src/components/searchresult.jsx';
 import Rentpackage from '../src/components/rentpackage.jsx';
+import Signup from './components/signup';
+import Signin from './components/signin';
 
 function App() {
   
@@ -15,6 +17,8 @@ function App() {
           <Route exact path='/selectcar' element={<Searching />}/>
           <Route exact path='/searchresult' element={<Searchres />}/>
           <Route exact path='/rentpackage' element={<Rentpackage />}/>
+          <Route exact path='/signup' element={<Signup />}/>
+          <Route exact path='/signin' element={<Signin />}/>
       </Routes>
     </Router> 
     );

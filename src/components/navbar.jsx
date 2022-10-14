@@ -33,7 +33,8 @@ function NavBar() {
                   <Nav.Link href="#whyus" smooth>Why Us</Nav.Link>
                   <Nav.Link href="#testimony" smooth>Testimony</Nav.Link>
                   <Nav.Link href="#faq" smooth>FAQ</Nav.Link>
-                  <button id="regisBtn"><b>Register</b></button>
+                  <button id="regisBtn" onClick={(e) => {e.preventDefault()
+                  window.location.href='/signup'}}><b>Register</b></button>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
