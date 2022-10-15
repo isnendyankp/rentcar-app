@@ -7,6 +7,7 @@ import Searchres from '../src/components/searchresult.jsx';
 import Rentpackage from '../src/components/rentpackage.jsx';
 import Signup from './components/signup';
 import Signin from './components/signin';
+import Payment from './components/payment';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/rentpackage' element={<Rentpackage />}/>
           <Route exact path='/signup' element={<Signup />}/>
           <Route exact path='/signin' element={<Signin />}/>
+          <Route exact path='/payment' element={<Payment />}/>
       </Routes>
     </Router> 
     );

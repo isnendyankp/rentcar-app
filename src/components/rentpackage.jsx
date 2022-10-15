@@ -123,6 +123,8 @@ function Rentpackage() {
                                 
                             </div>   
                         </div>
+                        <button onClick={(e) => {e.preventDefault()
+        window.location.href='/payment'}}>Lanjutkan Pembayaran</button>
                         
         <Footer />
         </>

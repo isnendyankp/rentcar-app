@@ -14,10 +14,10 @@ function Footer() {
                 <p>081-233-334-808</p>
             </div>
             <div className="Menu">
-            <a src="#" href="/" id="footer-item">Our Services</a>
-            <a src="#" href="/" id="footer-item">Why Us</a>
-            <a src="#" href="/" id="footer-item">Testimonial</a>
-            <a src="#" href="/" id="footer-item">FAQ</a>
+            <a src="#" href="#service" id="footer-item">Our Services</a>
+            <a src="#" href="#whyus" id="footer-item">Why Us</a>
+            <a src="#" href="#testimony" id="footer-item">Testimonial</a>
+            <a src="#" href="#faq" id="footer-item">FAQ</a>
             </div>
             <div className="connect-item">
                 <p id="connect">Connect with us</p>

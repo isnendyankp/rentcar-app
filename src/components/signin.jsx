@@ -1,5 +1,6 @@
 import React from "react";
 import thumbnail from '../images/Group83.png'
+import '../styles/sign.css'
 
 export default function Signin() {
     return(
