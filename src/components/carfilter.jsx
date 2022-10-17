@@ -31,10 +31,9 @@ function Carfilter() {
                             <label className="labels">Harga</label><br />
                             <select name="harga" id="category">
                                 <option value="blank">Masukan Harga Sewa per Hari</option>
-                                <option value="2 - 4 Orang">2 - 4 Orang</option>
-                                <option value="4 - 6 Orang">4 - 6 Orang</option>
-                                <option value="6 - 8 Orang">6 - 8 Orang</option>
-                                <option value="8 - 10 Orang">8 - 10 Orang</option>
+                                <option value="2 - 4 Orang">&#60; Rp.400.000</option>
+                                <option value="4 - 6 Orang">Rp. 400.000 - Rp. 600.000</option>
+                                <option value="6 - 8 Orang">&#62; Rp. 600.000</option>
                             </select>
                         </form>
                         </div>  
@@ -43,10 +42,7 @@ function Carfilter() {
                             <label className="labels">Status</label><br />
                             <select name="status" id="category">
                                 <option value="blank">Disewa</option>
-                                <option value="2 - 4 Orang">2 - 4 Orang</option>
-                                <option value="4 - 6 Orang">4 - 6 Orang</option>
-                                <option value="6 - 8 Orang">6 - 8 Orang</option>
-                                <option value="8 - 10 Orang">8 - 10 Orang</option>
+                                <option value="sedia">Sedia</option>
                             </select>
                         </form>
                         </div>  

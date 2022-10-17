@@ -66,6 +66,7 @@ export default function Getcar() {
                             <label className="labels">Status</label><br />
                             <select name="status" id="inputs">
                                 <option value="blank">Disewakan</option>
+                                <option value="sedia">Sedia</option>
                             </select>
                         </form>
                         </div>
