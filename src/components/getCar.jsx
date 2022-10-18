@@ -57,7 +57,7 @@ export default function Getcar() {
                                 <option value="blank">Masukan Harga Sewa per Hari</option>
                                 <option value="< 400000">&lt; Rp. 400.000</option>
                                 <option value="400000-600000">Rp. 400.000 - Rp. 600.000</option>
-                                <option value="< 400000">&lt; Rp. 400.000</option>
+                                <option value="< 60000">&gt; Rp. 600.000</option>
                             </select>
                         </form>
                         </div>  
@@ -65,7 +65,7 @@ export default function Getcar() {
                         <form action="">
                             <label className="labels">Status</label><br />
                             <select name="status" id="inputs">
-                                <option value="blank">Disewakan</option>
+                                <option value="blank">Disewa</option>
                                 <option value="sedia">Sedia</option>
                             </select>
                         </form>
