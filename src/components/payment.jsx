@@ -2,7 +2,9 @@ import React from "react";
 import NavBar from '../components/navbar'
 import Footer from "./footer";
 import {MdKeyboardBackspace} from 'react-icons/md'
+import {IoIosArrowUp} from 'react-icons/io'
 import '../styles/payment.css'
+import User from '../images/fi_users.png'
 
 export default function Payment() {
     return(
@@ -51,7 +53,36 @@ export default function Payment() {
             </div>
             <div className="line1"></div>
         </div>
-        <div className="paydetail"></div>
+        <div className="paydetail">
+            <div className="paydesc">
+            <p id="chosencar"><b>(Selected car)</b></p>
+            <p id="cap"><span><img src={User} alt='' id="capimg"/></span>6-8 orang</p>
+            <div className="total">
+                Total<span id="arrow"><IoIosArrowUp size={27}/></span><span id="priceval">(Price)</span>
+            </div>
+            <p id="price"><b>Harga</b></p>
+            <ul>
+                <li>Sewa Mobil Rp.500.000 x 7 Hari<span id="priceval2">(Price)</span></li>
+                </ul>
+                <p><b>Biaya Lainnya</b></p>
+                <ul>
+                    <li>Pajak<span className="include">Termasuk</span></li>
+                    <li>Biaya makan sopir<span className="include2">Termasuk</span></li>
+                </ul>
+                <div className="notincluded">
+                    <b>Belum Termasuk</b>
+                    <ul>
+                        <li>Bensin</li>
+                        <li>Tol dan parkir</li>
+                    </ul>
+                    </div>
+                    <div className="line2"></div>
+                    <p id="sum"><b>Total</b><span>(Price)</span></p>
+        </div>
+        <button id="payBtn" onClick={(e) => {
+            e.preventDefault(); window.location.href='/payment/confirm'
+        }}>Bayar</button>
+        </div>
         </div>
         <Footer />
         </>
