@@ -5,13 +5,21 @@ import {MdKeyboardBackspace} from 'react-icons/md'
 import {IoIosArrowUp} from 'react-icons/io'
 import '../styles/payment.css'
 import User from '../images/fi_users.png'
+import Status from "./status";
 
 export default function Payment() {
+
     return(
         <>
         <NavBar />
-        <p id="pay"><span><a href='/rentpackage' id='packBtn'><MdKeyboardBackspace size={27}/>
-        </a></span><b>Pembayaran</b></p>
+        <div className="heads">
+            <div className="headers">
+            <p id="pay"><span><a href='/rentpackage' id='packBtn'><MdKeyboardBackspace size={27}/>
+            </a></span><b>Pembayaran</b></p>
+            </div>
+            <Status 
+            current={['current', 'num', 'num']}/>
+        </div>
         <div className="pay-cont">
         <p id="titlep"><b>Detail Pesananmu</b></p>
             <div className="details">

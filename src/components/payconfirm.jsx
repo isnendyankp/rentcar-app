@@ -6,9 +6,12 @@ import {MdKeyboardBackspace} from 'react-icons/md'
 import {FiCopy} from 'react-icons/fi'
 // import {AiOutlineCheck} from 'react-icons/ai';
 import Tab from "./payinstruction";
+import Status from "./status";
+// import {PDFDownloadLink, PDFViewer} from 'react-pdf/renderer';
 
-export default function Confirm() {
+export default function Confirm(props) {
     const [payment, setPayment, paymentRef] = useState([23, 59, 59]);
+    // const [confirmed, setConfirmed] = useState(false);
 
     useEffect(() => {
         setInterval(() => {
@@ -39,8 +42,12 @@ export default function Confirm() {
         <>
         <NavBar />
         <div className="head">
+        <div className="header">
             <a href="/payment" id="paylink"><MdKeyboardBackspace size={27}/><span id="type">BCA Transfer</span></a>
             <p id="orderid">Order ID: 86754231</p>
+        </div>
+        <Status 
+        current={['current', 'current', 'num']}/>
         </div>
         <div className="first-row">
         <div className="countdown-cont">
