@@ -32,7 +32,7 @@ export default function Signup(submitForm) {
                 <input type="password" className="inputsign" name='password' value={value.password} onChange={handleChange} placeholder="6+ karakter" />
                 {errors.password && <p className="error"><span><sup>*</sup>{errors.password}</span></p>}
             </div>
-            <button id='signupBtn' onClick={handleSubmit}><b>Sign Up</b></button>
+            {!submitted && <button id='signupBtn' onClick={handleSubmit}><b>Sign Up</b></button>}
             {Object.keys(errors).length === 0 && submitted ? (<div className="success">
             <button id="uptoin"onClick={(e) => {
                     e.preventDefault()

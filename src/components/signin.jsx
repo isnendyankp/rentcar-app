@@ -19,7 +19,8 @@ export default function Signin() {
                 </label><br />
                 <input type="password" placeholder="6+ karakter" className="inputsign"/>
             </div>
-            <button id='signupBtn'><b>Sign In</b></button>
+            <button id='signupBtn' onClick={(e) => {e.preventDefault()
+            window.location.href='/'}}><b>Sign In</b></button>
             <p id="signupq">Don't have an account? <span><a href="/signup" id="linksignup"><b>Sign Up for free</b></a></span></p>
         </div>
         <img id="thumbnail"src={thumbnail} alt=''/>
