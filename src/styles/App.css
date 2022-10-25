@@ -426,6 +426,31 @@ line-height: 20px;
   margin-left: 10px;
 }
 
+.signinsuccess {
+    width: 220px;
+    height: 40px;
+    color: rgb(0,0,0);
+    margin-top: 0px;
+    background-color: rgb(189, 224, 189);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 3%;
+    animation: fade-out 5s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+
+}
+
 @media screen and (max-width:414px) {
   .Branddesc {
     display: flex;

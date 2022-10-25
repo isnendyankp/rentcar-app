@@ -4,7 +4,7 @@ import Handlebutton from "../logic_support/signup/handlebutton";
 
 export default function Signup(submitForm) {
     const {handleChange, handleSubmit, errors, value, submitted} = Handlebutton(submitForm);
-
+    
     return(
         <>
         <div className="sign-cont">
@@ -33,6 +33,7 @@ export default function Signup(submitForm) {
                 {errors.password && <p className="error"><span><sup>*</sup>{errors.password}</span></p>}
             </div>
             {!submitted && <button id='signupBtn' onClick={handleSubmit}><b>Sign Up</b></button>}
+            {submitted && <button id='signupBtn' onClick={handleSubmit}><b>Sign Up</b></button>}
             {Object.keys(errors).length === 0 && submitted ? (<div className="success">
             <button id="uptoin"onClick={(e) => {
                     e.preventDefault()

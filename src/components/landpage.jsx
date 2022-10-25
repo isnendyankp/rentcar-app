@@ -10,9 +10,10 @@ import Faq from './faq';
 import Footer from './footer';
 import Carouselsec from'./Testicarsl'
 import 'bootstrap/dist/css/bootstrap.css';
+// import Handlebutton from "../logic_support/sign in/handlebutton";
 
 
-function Landingpage() {
+function Landingpage(submit) {
     return (
       <div className="Landpage">
       <NavBar />
