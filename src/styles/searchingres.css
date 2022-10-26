@@ -3,32 +3,16 @@
 .editsearch-cont3 {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
   width: 35%;
   height: 142px;
-=======
-  /* position: relative; */
-  width: 62.5%;
-  height: 142px;
-  /* left: -30%; */
-  /* top: -10%; */
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   justify-content: center;
   align-content: center;
-<<<<<<< HEAD
   padding: 0%;
   margin: auto;
   margin-top: -3%;
-  /* margin-right: 40%; */
-  /* margin-left: 25%; */
-=======
-  margin: 0 18.5rem;
-  /* margin-left: 15%; */
-  margin-top: -4%;
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
   z-index: 1;
 }
 #titleform {
@@ -95,9 +79,8 @@
   background: #FFFFFF;
   border: 1px solid #222222;
   border-radius: 2px;
-  margin-left: auto;
+  margin: auto;
 }
-<<<<<<< HEAD
 
 #input-search2 {
   width: 100%;
@@ -109,11 +92,6 @@
 }
 
 
-=======
-.labels {
-  margin-left: -2%;
-}
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
 .label-name2 {
   width: 100%;
   text-align: left;
@@ -196,7 +174,6 @@
     margin-top: -70px;
     z-index: 1;
   }
-<<<<<<< HEAD
   .search-form {
     display: flex;
     flex-direction: column;
@@ -249,13 +226,6 @@
 
   #input-namaMobil {
     width: 70%;
-=======
-  .inputs {
-    margin-left: -2.6%;
-    border: 1px solid #222222;
-    border-radius: 2px;
-    width: 100%;
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
     height: 36px;
     font-size: 12px;
   }
@@ -265,7 +235,6 @@
     background: #FFFFFF;
     border: 1px solid #222222;
     border-radius: 2px;
-<<<<<<< HEAD
     margin-left: 15%;
   }
 
@@ -276,29 +245,6 @@
     border: 1px solid #222222;
     border-radius: 2px;
     margin-left: 10%;
-=======
-    margin-left: 4.6%;
-  }
-  #titleform {
-    margin-top: 24px;
-    margin-left: 3%;
-  }
-  .label-name2 {
-    text-align: left;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #3C3C3C;
-    margin-left: 4.6%;
-  }
-  .search-form {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    margin-top: 16px;
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
   }
   
   .filtered {

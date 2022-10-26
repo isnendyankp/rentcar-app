@@ -40,13 +40,8 @@ export default function Getcar() {
         </div>
                 <div className="category-cont2">
                 <form>
-<<<<<<< HEAD
                 <label className="label-Kategori">Kategori</label><br />
                 <select name="kategori" id="input-search2">
-=======
-                <label className="labels">Kategori</label><br />
-                <select name="kategori" className="inputs">
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
                     <option value="blank">Masukan Kapasitas mobil</option>
                     <option value="2 - 4 Orang">2 - 4 Orang</option>
                     <option value="4 - 6 Orang">4 - 6 Orang</option>
@@ -56,13 +51,8 @@ export default function Getcar() {
                     </div>  
                     <div className="price2">
                         <form action="">
-<<<<<<< HEAD
                             <label className="label-Harga">Harga</label><br />
                             <select name="harga" id="input-search2">
-=======
-                            <label className="labels">Harga</label><br />
-                            <select name="harga" className="inputs">
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
                                 <option value="blank">Masukan Harga Sewa per Hari</option>
                                 <option value="< 400000">&lt; Rp. 400.000</option>
                                 <option value="400000-600000">Rp. 400.000 - Rp. 600.000</option>
@@ -72,13 +62,8 @@ export default function Getcar() {
                         </div>  
                         <div className="status2">
                         <form action="">
-<<<<<<< HEAD
                             <label className="label-status">Status</label><br />
                             <select name="status" id="input-search2">
-=======
-                            <label className="labels">Status</label><br />
-                            <select name="status" className="inputs">
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
                                 <option value="blank">Disewa</option>
                                 <option value="sedia">Sedia</option>
                             </select>
