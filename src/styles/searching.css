@@ -214,10 +214,10 @@ margin-left: 0px;
 }
 
 #name-input2 {
-border: 1px solid #222222;
-border-radius: 2px;
-width: 221px;
-height: 36px;
+  border: 1px solid #222222;
+  border-radius: 2px;
+  width: 221px;
+  height: 36px;
 }
 
 #inputs {
@@ -246,8 +246,9 @@ height: 36px;
   color: #FFFFFF;
 }
 .form-title {
-  margin-top: 24px;
-  margin-left: 24px;
+  padding-left: 0px;
+  /* margin-top: 24px;
+  margin-left: 24px; */
 }
 
 #input-search2 {
