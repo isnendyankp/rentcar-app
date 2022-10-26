@@ -13,8 +13,6 @@
   padding: 0%;
   margin: auto;
   margin-top: -3%;
-  /* margin-right: 40%; */
-  /* margin-left: 25%; */
   z-index: 1;
 }
 .carCard {
@@ -43,7 +41,7 @@
   background: #FFFFFF;
   border: 1px solid #222222;
   border-radius: 2px;
-  margin-left: auto;
+  margin: auto;
 }
 
 #input-search2 {
@@ -189,6 +187,11 @@
 
   #input-namaMobil {
     width: 70%;
+    height: 36px;
+    font-size: 12px;
+  }
+  #input-search2 {
+    width: 93%;
     height: 36px;
     background: #FFFFFF;
     border: 1px solid #222222;
