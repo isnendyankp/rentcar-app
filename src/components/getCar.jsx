@@ -42,7 +42,7 @@ export default function Getcar() {
                 <div className="category-cont2">
                 <form>
                 <label className="labels">Kategori</label><br />
-                <select name="kategori" id="inputs">
+                <select name="kategori" id="input-search2">
                     <option value="blank">Masukan Kapasitas mobil</option>
                     <option value="2 - 4 Orang">2 - 4 Orang</option>
                     <option value="4 - 6 Orang">4 - 6 Orang</option>
@@ -53,7 +53,7 @@ export default function Getcar() {
                     <div className="price2">
                         <form action="">
                             <label className="labels">Harga</label><br />
-                            <select name="harga" id="inputs">
+                            <select name="harga" id="input-search2">
                                 <option value="blank">Masukan Harga Sewa per Hari</option>
                                 <option value="< 400000">&lt; Rp. 400.000</option>
                                 <option value="400000-600000">Rp. 400.000 - Rp. 600.000</option>
@@ -64,7 +64,7 @@ export default function Getcar() {
                         <div className="status2">
                         <form action="">
                             <label className="labels">Status</label><br />
-                            <select name="status" id="inputs">
+                            <select name="status" id="input-search2">
                                 <option value="blank">Disewa</option>
                                 <option value="sedia">Sedia</option>
                             </select>
@@ -72,7 +72,7 @@ export default function Getcar() {
                         </div>
                         </div>
                         <button id="editBtn2">
-                            <b>Edit</b>
+                            <b>Apply</b>
                             </button> 
                         </div> 
         <div className="carList" key={data.id}>
