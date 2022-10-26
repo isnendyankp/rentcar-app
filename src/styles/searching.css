@@ -1,3 +1,5 @@
+/* carfilter.jsx */
+/* ada dibagian halaman http://localhost:3002/selectcar */
 
 .searching{
   text-align: center;
@@ -46,7 +48,7 @@
   font-size: 12px;
   line-height: 18px;
   color: #3C3C3C;
-  margin-left: -110px;
+  margin-left: -120px;
   margin-top: 0px;
 }
 .category-cont {
