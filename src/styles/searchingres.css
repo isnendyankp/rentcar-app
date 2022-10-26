@@ -3,70 +3,19 @@
 .editsearch-cont3 {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
   width: 35%;
   height: 142px;
-=======
-  /* position: relative; */
-  width: 62.5%;
-  height: 142px;
-  /* left: -30%; */
-  /* top: -10%; */
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   justify-content: center;
   align-content: center;
-<<<<<<< HEAD
   padding: 0%;
   margin: auto;
   margin-top: -3%;
   /* margin-right: 40%; */
   /* margin-left: 25%; */
-=======
-  margin: 0 18.5rem;
-  /* margin-left: 15%; */
-  margin-top: -4%;
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
   z-index: 1;
-}
-#titleform {
-  margin-top: 24px;
-  margin-left: -8%;
-
-}
-.search-form {
-  margin-left: -11%;
-}
-.inputs {
-  margin-left: 0%;
-  border: 1px solid #222222;
-  border-radius: 2px;
-  width: 100%;
-  height: 36px;
-  font-size: 12px;
-}
-
-.filtered {
-  margin-left: -16%;
-}
-#editBtn2 {
-  width: 7%;
-  height: 36px;
-  margin-top: 83px;
-  margin-left: -16%;
-  background: #FFFFFF;
-  border: 1px solid #0D28A6;
-  border-radius: 2px;
-  font-family: 'Arial';
-  font-size: 14px;
-  text-align: center;
-  color: #0D28A6;
-}
-#editBtn2:hover {
-  background: #0D28A6;
-  color: #FFFFFF;
 }
 .carCard {
   display: flex;
@@ -80,7 +29,6 @@
   justify-content: center;
   align-content: center;
   text-align: left;
-  margin-left: 16px;
 }
 .car-detail {
   margin-left: 7%;
@@ -97,7 +45,6 @@
   border-radius: 2px;
   margin-left: auto;
 }
-<<<<<<< HEAD
 
 #input-search2 {
   width: 100%;
@@ -109,11 +56,6 @@
 }
 
 
-=======
-.labels {
-  margin-left: -2%;
-}
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
 .label-name2 {
   width: 100%;
   text-align: left;
@@ -170,7 +112,6 @@
 .carList {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -196,7 +137,6 @@
     margin-top: -70px;
     z-index: 1;
   }
-<<<<<<< HEAD
   .search-form {
     display: flex;
     flex-direction: column;
@@ -249,23 +189,10 @@
 
   #input-namaMobil {
     width: 70%;
-=======
-  .inputs {
-    margin-left: -2.6%;
-    border: 1px solid #222222;
-    border-radius: 2px;
-    width: 100%;
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
-    height: 36px;
-    font-size: 12px;
-  }
-  #input-search2 {
-    width: 93%;
     height: 36px;
     background: #FFFFFF;
     border: 1px solid #222222;
     border-radius: 2px;
-<<<<<<< HEAD
     margin-left: 15%;
   }
 
@@ -276,29 +203,6 @@
     border: 1px solid #222222;
     border-radius: 2px;
     margin-left: 10%;
-=======
-    margin-left: 4.6%;
-  }
-  #titleform {
-    margin-top: 24px;
-    margin-left: 3%;
-  }
-  .label-name2 {
-    text-align: left;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #3C3C3C;
-    margin-left: 4.6%;
-  }
-  .search-form {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    margin-top: 16px;
->>>>>>> 74877aac2e7fe396d631a959f5f63d60f659e33a
   }
   
   .filtered {
@@ -307,8 +211,8 @@
   #editBtn2 {
     width: 51px;
     height: 36px;
-    margin-top: 0px;
-    margin-left: 8px;
+    margin-top: 24px;
+    margin-left: 16px;
     background: #FFFFFF;
     border: 1px solid #0D28A6;
     border-radius: 2px;
