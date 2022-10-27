@@ -1,18 +1,17 @@
-import React , {useState, useEffect} from "react";
+import React , {useEffect} from "react";
+import useState from 'react-usestateref';
 import NavBar from "./navbar";
 import Footer from "./footer";
 import '../styles/payconfirm.css'
 import {MdKeyboardBackspace} from 'react-icons/md'
 import {FiCopy} from 'react-icons/fi'
-// import {AiOutlineCheck} from 'react-icons/ai';
 import Tab from "./payinstruction";
 import Status from "./status";
-// import {PDFDownloadLink, PDFViewer} from 'react-pdf/renderer';
+
 
 export default function Confirm(props) {
     const [payment, setPayment, paymentRef] = useState([23, 59, 59]);
-    // const [confirmed, setConfirmed] = useState(false);
-
+    
     useEffect(() => {
         setInterval(() => {
           let [hour, minute, second] = paymentRef.current;
@@ -25,15 +24,15 @@ export default function Confirm(props) {
           if (minute === 0) {
             if (second === 0) {
               hour = hour - 1;
-              minute = 59;
+              minute = 60;
               second = 60;
             } else {
               hour = hour - 1;
-              minute = 59;
+              minute = 60;
             }
           }
     
-          second -= 1;
+          second = second - 0.5;
           setPayment([hour, minute, second]);
         }, 1000);
       }, [paymentRef, setPayment]);
