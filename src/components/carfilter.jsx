@@ -1,6 +1,7 @@
 import '../styles/searching.css'
 import React from "react";
 
+// ada dibagian halaman http://localhost:3002/selectcar
 
 function Carfilter() {
        function handleClick(e) {
