@@ -135,6 +135,17 @@
     margin-left: -28px;
 }
 
+.icon:hover {
+    margin-left: -28px;
+    background-color: #abaefc;
+    border-radius: 50%;
+}
+.copied {
+    color: #5CB85F;
+    margin-left: 88%;
+    margin-bottom: 0%;
+    margin-top: -5.3%;
+}
 .status {
     display: flex;
     flex-direction: row;
@@ -170,4 +181,52 @@
 .line {
     margin-top: -5px;
     margin-right: 8px;
+}
+
+.transfer-cont {
+    width: 405px;
+height: 474px;
+background: #FFFFFF;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+margin-left: 2%;
+margin-top: 0%;
+margin-bottom: 0%;
+padding-left: 24px;
+}
+
+#titlecon {  
+    padding-top: 24px;
+}
+
+#thank {
+    font-size: 14px;
+    width: 350px;
+}
+.upload-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+}
+.up-field {
+    width: 296px;
+height: 162px;
+background: #EEEEEE;
+border: 1px dashed #D0D0D0;
+border-radius: 4px;
+}
+
+#upload {
+    border: none;
+    background-color: #5CB85F;
+    color: #FFFFFF;
+    margin-top: 5%;
+    width: 357px;
+    height: 36px;
+}
+#img-icon {
+    margin-left: 46%;
+    margin-top: 25%;
 }

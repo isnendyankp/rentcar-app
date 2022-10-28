@@ -6,7 +6,21 @@ export default function Handlebutton() {
         email:'',
         password:''
     })
+    const signin = async () => {
+        try {
+            const resp = await fetch(`https://bootcamp-rent-car.herokuapp.com/customer/auth/login`, {
+                method: 'POST', headers:{'Content-type': 'application/json'}, body: JSON.stringify({
+                    ...values
+                })
+            })
 
+            if (resp.status > 299 || resp.status < 200) {
+                throw new Error('not found')
+            }
+        } catch (err) {
+            console.log(err)
+        }
+    }
     const[errors, setErrors] = useState({});
     const [submitted, setSubmited] = useState(false);
 
@@ -21,6 +35,7 @@ export default function Handlebutton() {
         e.preventDefault();
         setErrors(Validate(values));
         setSubmited(true)
+        signin()
     };
     return {handleChange, handleSubmit, values, errors, submitted}
 }
