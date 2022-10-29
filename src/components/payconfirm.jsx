@@ -14,9 +14,10 @@ import {FiImage} from 'react-icons/fi'
 
 export default function Confirm(props) {
     const [payment, setPayment, paymentRef] = useState([23, 59, 59]);
-    const [isclicked, setIsClicked] = useState(false)
-    const [copied, setCopied] = useState(false)
-    const [confirmation, setConfirmation] = useState(false)
+    const [time, setTime, timeRef] = useState ([9, 59]);
+    const [isclicked, setIsClicked] = useState(false);
+    const [copied, setCopied] = useState(false);
+    const [confirmation, setConfirmation] = useState(false);
 
     const number = '54104257877'
     
@@ -45,6 +46,22 @@ export default function Confirm(props) {
         }, 1000);
       }, [paymentRef, setPayment]);
 
+      const uploadtime = () => {
+        setConfirmation(true);
+        setInterval(() => {
+          let [minute, second] = timeRef.current;
+    
+          if (second === 0) {
+            minute = minute - 1;
+            second = 59;
+          } else {
+            second -= 1;
+          }
+          setTime([minute, second]);
+        }, 1000);
+      };
+    
+
       const Copy = () => {
         navigator.clipboard.writeText(number)
         setCopied(true)
@@ -55,9 +72,6 @@ export default function Confirm(props) {
         setIsClicked(true)
       }
 
-      const Confirm = () => {
-        setConfirmation(true)
-      }
     return(
         <>
         <NavBar />
@@ -91,8 +105,18 @@ export default function Confirm(props) {
             </h6>
             </div>
             </div>
-            {confirmation ? (<div className="transfer-cont">
-              <p id="titlecon"><b>Konfirmasi Pembayaran</b></p>
+            {confirmation ? (<div className="transfercont">
+              <div className="header">
+              <p><b>Konfirmasi Pembayaran</b></p>
+              <div className="countdown10">
+                <span className='time'>
+                {time[0] < 10 ? `0${time[0]}` : time[0]}
+                  </span>:
+                  <span className="time">
+                  {time[1] < 10 ? `0${time[1]}` : time[1]}
+                  </span>
+              </div>
+              </div>
               <p id="thank">Terima kasih telah melakukan konfirmasi pembayaran. Pembayaranmu akan segera kami cek tunggu kurang lebih 10 menit untuk mendapatkan konfirmasi.</p>
               <p>Upload Bukti Pembayaran</p>
               <p id="thank">Untuk membantu kami lebih cepat melakukan pengecekan. Kamu bisa upload bukti bayarmu</p>
@@ -100,11 +124,11 @@ export default function Confirm(props) {
               <div className="up-field">
                 <div id="img-icon"><FiImage size={20}/></div>
               </div>
-              <button id="upload"><b>Upload</b></button>
+              <button id="uploadBtn" disabled><b>Upload</b></button>
               </div>
             </div>):(<div className="confirmation">
                 <p id="instruction">Klik konfirmasi pembayaran untuk mempercepat proses pengecekan</p>
-                <button id="confirmBtn" onClick={Confirm}>Konfirmasi Pembayaran</button>
+                <button id="confirmBtn" onClick={uploadtime}>Konfirmasi Pembayaran</button>
             </div>)}
         </div>
         <div className="transfer">
