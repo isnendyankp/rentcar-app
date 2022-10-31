@@ -35,7 +35,7 @@ export default function Getcar() {
             <p id="titleform"><b>Pencarianmu</b></p>
                 <div className="search-form">
                 <div className="filtered">
-                  <label className="label-name2">Nama mobil</label><br />
+                  <label className="label-name2">Nama Mobil</label><br />
             <input type="text" placeholder="" id='input-namaMobil' onChange={(e) => setInput(e.target.value)}/>
         </div>
                 <div className="category-cont2">
