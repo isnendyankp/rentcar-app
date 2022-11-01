@@ -9,7 +9,8 @@ import Tab from "./payinstruction";
 import Status from "./status";
 import {BsCheck2} from 'react-icons/bs'
 import {FiImage} from 'react-icons/fi'
-
+import Dropzone from 'react-dropzone-uploader'
+import 'react-dropzone-uploader/dist/styles.css'
 
 
 export default function Confirm(props) {
@@ -18,8 +19,20 @@ export default function Confirm(props) {
     const [isclicked, setIsClicked] = useState(false);
     const [copied, setCopied] = useState(false);
     const [confirmation, setConfirmation] = useState(false);
+    const [uploaded, setUploaded] = useState(false);
 
     const number = '54104257877'
+
+    const getUploadParams = ({ meta }) => { return { url: 'https://httpbin.org/post' } }
+
+    const handleChangeStatus = ({ meta, file }, status) => { console.log(status, meta, file) }
+
+    const handleSubmit = (files, allFiles) => {
+    console.log(files.map(f => f.meta))
+    allFiles.forEach(f => f.remove());
+    setUploaded(true)
+  }
+
     
     useEffect(() => {
         setInterval(() => {
@@ -71,7 +84,7 @@ export default function Confirm(props) {
         navigator.clipboard.writeText('Car price')
         setIsClicked(true)
       }
-
+      
     return(
         <>
         <NavBar />
@@ -122,9 +135,14 @@ export default function Confirm(props) {
               <p id="thank">Untuk membantu kami lebih cepat melakukan pengecekan. Kamu bisa upload bukti bayarmu</p>
               <div className="upload-cont">
               <div className="up-field">
-                <div id="img-icon"><FiImage size={20}/></div>
+                <Dropzone 
+                  getUploadParams={getUploadParams}
+                  onChangeStatus={handleChangeStatus}
+                  onSubmit={handleSubmit}
+                  maxFiles={1}
+                  accept="image/*"/><div id="img-icon"><FiImage size={20}/></div>
               </div>
-              <button id="uploadBtn" disabled><b>Upload</b></button>
+              {uploaded ? (<button id="uploadBtn"><b>Upload</b></button>) : (<button id="uploadBtn" disabled><b>Upload</b></button>)}
               </div>
             </div>):(<div className="confirmation">
                 <p id="instruction">Klik konfirmasi pembayaran untuk mempercepat proses pengecekan</p>

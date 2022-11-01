@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from '../components/navbar'
 import Footer from "./footer";
 import {MdKeyboardBackspace} from 'react-icons/md'
@@ -6,8 +6,35 @@ import {IoIosArrowUp} from 'react-icons/io'
 import '../styles/payment.css'
 import User from '../images/fi_users.png'
 import Status from "./status";
+import {BsCheck2} from 'react-icons/bs'
 
 export default function Payment() {
+    const [select, setSelect] = useState(false)
+    const [bank, setBank] = useState(
+        {bca: false, 
+         bni: false, 
+         mandiri: false}
+    )
+
+    const bca = () => {
+        setBank({bca:!bank.bca,})
+        setSelect(true)
+    }
+
+    const bni = () => {
+        setBank({
+                 bni: !bank.bni,
+                 })
+                 setSelect(true)
+    }
+
+    const mandiri = () => {
+        setBank({
+                 mandiri:!bank.mandiri
+        })
+        setSelect(true)
+    }
+
 
     return(
         <>
@@ -46,18 +73,36 @@ export default function Payment() {
             <p id="titled"><b>Pilih Bank Transfer</b></p>
             <p id="methdesc">Kamu bisa membayar dengan transfer melalui ATM, Internet Banking atau Mobile Banking</p>
             <div className="method-cont">
-                <button className="bank">BCA</button>
-                <p className="method">BCA Transfer</p>
+                <button className="bank" onClick={bca}>BCA</button>
+                    <p className="method">BCA Transfer</p>
+                {bank.bca ? (
+                <div className="select">
+                    <div className="selecticon"><BsCheck2 size={27} /></div>
+                    </div>):(
+                        null
+                    )}
             </div>
             <div className="line1"></div>
             <div className="method-cont2">
-                <button className="bank">BRI</button>
+                <button className="bank" onClick={bni}>BNI</button>
                 <p className="method">BNI Transfer</p>
+                {bank.bni ? (
+                <div className="select">
+                    <div className="selecticon"><BsCheck2 size={27} /></div>
+                    </div>):(
+                        null
+                    )}
             </div>
             <div className="line1"></div>
             <div className="method-cont2">
-                <button className="bank">Mandiri</button>
+                <button className="bank" onClick={mandiri}>Mandiri</button>
                 <p className="method">Mandiri Transfer</p>
+                {bank.mandiri ? (
+                <div className="select">
+                    <div className="selecticon"><BsCheck2 size={27} /></div>
+                    </div>):(
+                        null
+                    )}
             </div>
             <div className="line1"></div>
         </div>
@@ -87,9 +132,9 @@ export default function Payment() {
                     <div className="line2"></div>
                     <p id="sum"><b>Total</b><span>(Price)</span></p>
         </div>
-        <button id="payBtn" onClick={(e) => {
+        {select ? (<button id="payBtn" onClick={(e) => {
             e.preventDefault(); window.location.href='/payment/confirm'
-        }}>Bayar</button>
+        }}>Bayar</button>):(<button id="payBtn" disabled>Bayar</button>)}
         </div>
         </div>
         <Footer />
