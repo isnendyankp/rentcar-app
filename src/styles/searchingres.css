@@ -3,7 +3,7 @@
 .editsearch-cont3 {
   display: flex;
   flex-direction: row;
-  width: 35%;
+  width: 88%;
   height: 142px;
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -42,6 +42,7 @@
   border: 1px solid #222222;
   border-radius: 2px;
   margin: auto;
+
 }
 
 #input-search2 {
@@ -51,6 +52,24 @@
   border: 1px solid #222222;
   border-radius: 1px;
   margin: auto; 
+}
+
+#titleform {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#editBtn2 {
+  width: 15%;
+  height: 36px;
+  margin-right: 10%;
+  background: #FFFFFF;
+  border: 1px solid #0D28A6;
+  border-radius: 2px;
+  font-family: 'Arial';
+  font-size: 14px;
+  color: #0D28A6;
 }
 
 
@@ -63,7 +82,7 @@
   font-size: 12px;
   line-height: 18px;
   color: #3C3C3C;
-  margin: auto;
+  margin-left: auto;
 }
 
 .label-Kategori {
@@ -110,6 +129,7 @@
 .carList {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -182,16 +202,12 @@
     font-size: 12px;
     line-height: 18px;
     color: #3C3C3C;
-    margin-left: 21%;
+    margin-left: 10%;
   }
 
+  
   #input-namaMobil {
-    width: 70%;
-    height: 36px;
-    font-size: 12px;
-  }
-  #input-search2 {
-    width: 93%;
+    width: 66.8%;
     height: 36px;
     background: #FFFFFF;
     border: 1px solid #222222;
@@ -215,6 +231,7 @@
     width: 51px;
     height: 36px;
     margin-top: 24px;
+    margin-bottom: 10px;
     margin-left: 16px;
     background: #FFFFFF;
     border: 1px solid #0D28A6;
@@ -233,17 +250,80 @@
   }
 }
 
-/* @media only screen and (min-width: 1024px) {
-  /* .editsearch-cont3{
-    position: relative;
-    bottom: 4rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 8rem;
-  } */
-  /* .carCard{
-    position: relative;
-    bottom: 4rem;
-    margin: 0 8rem;
-  } */
+@media screen and (min-width:415px) {
+  
+  .label-name2 {
+    text-align: left;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3C3C3C;
+    margin-left: 15%;
+  }
+
+  #input-namaMobil {
+    width: 66.8%;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 2px;
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width:850px) {
+  
+  .label-name2 {
+    text-align: left;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3C3C3C;
+    margin-left: 9%;
+  }
+
+  #input-namaMobil {
+    width: 90%;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 2px;
+    margin-left: 9%;
+  }
+}
+@media screen and (min-width:1020px) {
+  .label-name2 {
+    text-align: left;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3C3C3C;
+    margin-left: 0%;
+  }
+
+  #input-namaMobil {
+    width: 90%;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 2px;
+    margin-left: 0%;
+  }
+  
+  #editBtn2 {
+    width: 9%;
+    height: 36px;
+    margin-right: 10%;
+    background: #FFFFFF;
+    border: 1px solid #0D28A6;
+    border-radius: 2px;
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #0D28A6;
+  }
+}
