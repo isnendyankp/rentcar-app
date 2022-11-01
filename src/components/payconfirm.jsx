@@ -96,8 +96,10 @@ export default function Confirm(props) {
         <Status 
         current={['current', 'current', 'num']}/>
         </div>
-        <div className="first-row">
-        <div className="countdown-cont">
+            {confirmation ? (
+              <div>
+            <div className="first-row">
+              <div className="countdown-cont">
             <div className="deadlinedesc">
             <h6><b>Selesaikan Pembayaran Sebelum</b></h6>
             <p>Rabu, 19 Mei 2022 jam 13.00 WIB</p>
@@ -118,7 +120,7 @@ export default function Confirm(props) {
             </h6>
             </div>
             </div>
-            {confirmation ? (<div className="transfercont">
+            <div className="transfercont">
               <div className="header">
               <p><b>Konfirmasi Pembayaran</b></p>
               <div className="countdown10">
@@ -140,16 +142,16 @@ export default function Confirm(props) {
                   onChangeStatus={handleChangeStatus}
                   onSubmit={handleSubmit}
                   maxFiles={1}
+                  inputContent="Drop A File"
                   accept="image/*"/><div id="img-icon"><FiImage size={20}/></div>
               </div>
-              {uploaded ? (<button id="uploadBtn"><b>Upload</b></button>) : (<button id="uploadBtn" disabled><b>Upload</b></button>)}
+              {uploaded ? (<button id="uploadBtn" onClick={(e) => { e.preventDefault()
+                window.location.href = '/payment/confirm/ticket'
+              }}><b>Upload</b></button>) : (<button id="uploadBtn" disabled><b>Upload</b></button>)}
               </div>
-            </div>):(<div className="confirmation">
-                <p id="instruction">Klik konfirmasi pembayaran untuk mempercepat proses pengecekan</p>
-                <button id="confirmBtn" onClick={uploadtime}>Konfirmasi Pembayaran</button>
-            </div>)}
-        </div>
-        <div className="transfer">
+            </div>
+            </div>
+            <div className="transfer">
               <p><b>Lakukan Transfer Ke</b></p>
               <div className="transferid">
                 <button id='selectedbank' disabled>BCA</button>
@@ -168,6 +170,55 @@ export default function Confirm(props) {
                     </div>
                   </div>
             </div>
+            </div>):(
+              <div>
+                <div className="first-row">
+                  <div className="countdown-cont">
+            <div className="deadlinedesc">
+            <h6><b>Selesaikan Pembayaran Sebelum</b></h6>
+            <p>Rabu, 19 Mei 2022 jam 13.00 WIB</p>
+            </div>
+            <div className="countdown">
+            <h6>
+              <span className="time">
+                {payment[0] < 10 ? `0${payment[0]}` : payment[0]}
+              </span>
+              <span>:</span>
+              <span className="time">
+                {payment[1] < 10 ? `0${payment[1]}` : payment[1]}
+              </span>
+              <span>:</span>
+              <span className="time">
+                {payment[2] < 10 ? `0${payment[2]}` : payment[2]}
+              </span>
+            </h6>
+            </div>
+            </div>
+                <div className="confirmation">
+                <p id="instruction">Klik konfirmasi pembayaran untuk mempercepat proses pengecekan</p>
+                <button id="confirmBtn" onClick={uploadtime}>Konfirmasi Pembayaran</button>
+            </div>
+            </div>
+            <div className="transfer2">
+              <p><b>Lakukan Transfer Ke</b></p>
+              <div className="transferid">
+                <button id='selectedbank' disabled>BCA</button>
+                <p id="selectedmethod">BCA Transfer</p>
+                </div>
+                <p id="transferid">a.n Binar Car Rental</p>
+                <div className="input-cont">
+                    <div className="Number-cont">
+                      <label htmlFor="accnumber">Nomor Rekening</label><br />
+                      <input type="text" value={number} className='Number' disabled/>{copied ? (<div className="copied"><BsCheck2 size={27}/></div>):(<i className="icon" onClick={Copy}><FiCopy/></i>)} 
+                    </div>
+                    <div className="Price-cont">
+                    <label htmlFor="totalprice">Total Bayar</label><br />
+                    <input type="text" value='Car price' className='Number' disabled/> 
+                    {isclicked ? (<div className="copied"><BsCheck2 size={27}/></div>):(<i className="icon" onClick={Copy2}><FiCopy/></i>) }
+                    </div>
+                  </div>
+            </div>
+            </div>)}
             <Tab />
         <Footer />
         </>
