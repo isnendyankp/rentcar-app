@@ -8,6 +8,7 @@ import {BsCheckCircle} from 'react-icons/bs'
 import {FiDownload} from 'react-icons/fi'
 import Pdf from "./pdf";
 
+
 export default function Ticket() {
     return(
         <>
@@ -33,7 +34,6 @@ export default function Ticket() {
         <div className="invoice-cont">
             <div className="texts">
             <p><b>Invoice</b></p>
-            <p><span>*</span> no invoice</p>
             </div>
             <button id="downloadBtn"><i><FiDownload size={18}/></i><b id="unduh">Unduh</b></button>
         </div>

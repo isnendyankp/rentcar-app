@@ -11,6 +11,7 @@ import Payment from './components/payment';
 import Confirm from './components/payconfirm';
 import Ticket from './components/ticket';
 
+
 function App() {
   
     return ( 
