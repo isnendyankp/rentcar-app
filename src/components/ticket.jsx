@@ -10,6 +10,18 @@ import Pdf from "./pdf";
 
 
 export default function Ticket() {
+
+    const handleClick = () => {
+        fetch('/Binarcarrental.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = '/Binarcarrental.pdf';
+                alink.click();
+            })
+        })
+    }
     return(
         <>
         <NavBar />
@@ -35,7 +47,7 @@ export default function Ticket() {
             <div className="texts">
             <p><b>Invoice</b></p>
             </div>
-            <button id="downloadBtn"><i><FiDownload size={18}/></i><b id="unduh">Unduh</b></button>
+            <button id="downloadBtn" onClick={handleClick}><i><FiDownload size={18}/></i><b id="unduh">Unduh</b></button>
         </div>
         <Pdf />
         <Footer />
