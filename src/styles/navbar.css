@@ -50,7 +50,24 @@
   border: none;
   color: rgb(0, 0, 0);
 }
+.showuser{
+  display: flex;
+  flex-direction: row;
+}
 
+#userava {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin-top: -1.5%;
+}
+
+#logout {
+  color: #fff;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
   @media screen and (max-width: 414px) {
     .mb-3 {
         visibility: visible;

@@ -5,7 +5,7 @@ import '../styles/sign.css'
 
 export default function Signin(submit) {
 
-    const {handleChange, handleSubmit, errors, values, submitted} = Handlebutton(submit);
+    const {handleChange, handleSubmit,rentClick, errors, values, submitted} = Handlebutton(submit);
 
     return(
         <>
@@ -32,14 +32,10 @@ export default function Signin(submit) {
             </div>
             {!submitted && <button id='signupBtn' onClick={handleSubmit}><b>Sign In</b></button>}
             {submitted && <button id='signupBtn' onClick={handleSubmit}><b>Sign In</b></button>}
-            
             {Object.keys(errors).length === 0 && submitted ? (<div className="success">
-            <button id="uptoin"onClick={(e) => {
-                    e.preventDefault()
-                    window.location.href='/'
-                }}><b>Rent a Car!</b></button>
+            <button id="uptoin"onClick={rentClick
+                }><b>Rent a Car!</b></button>
                 </div>):(<p id="null"></p>)}
-            
             <p id="signupq">Don't have an account? <span><a href="/signup" id="linksignup"><b>Sign Up for free</b></a></span></p>
         </div>
         <img id="thumbnail"src={thumbnail} alt=''/>

@@ -4,9 +4,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import avatar from '../images/avatar.jpeg'
+import Handlebutton from "../logic_support/sign in/handlebutton";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
+  const loggedin = Handlebutton()
+  const {logout} = Handlebutton()
+  
+  let details = localStorage.getItem('userDetails');
+  let user = JSON.parse(details);
+  
+  
     return(
         <>
         <header className="nav-container">
@@ -33,8 +42,18 @@ function NavBar() {
                   <Nav.Link href="#whyus" smooth>Why Us</Nav.Link>
                   <Nav.Link href="#testimony" smooth>Testimony</Nav.Link>
                   <Nav.Link href="#faq" smooth>FAQ</Nav.Link>
-                  <button id="regisBtn" onClick={(e) => {e.preventDefault()
-                  window.location.href='/signup'}}><b>Register</b></button>
+                  {loggedin ? (<div className="showuser">
+                    <img src={avatar} alt="user avatar" id='userava'/>
+                    <NavDropdown
+                      id="nav-dropdown-dark-example"
+                      title={user.fullname}
+                      menuVariant="dark"
+                    >
+                      <NavDropdown.Item><button id="logout" onClick={logout}>Logout</button></NavDropdown.Item>
+                    </NavDropdown>
+                  </div>):
+                  (<button id="regisBtn" onClick={(e) => {e.preventDefault()
+                   window.location.href='/signup'}}><b>Register</b></button>)}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

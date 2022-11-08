@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import Validate from "./signupvalid";
+import { Storeuser } from "../../components/localstore";
 
 
 export default function Handlebutton() {
@@ -40,7 +41,9 @@ export default function Handlebutton() {
                 throw new Error('not found')
             }
 
-            // alert('post success')
+            Storeuser(JSON.stringify({
+                ...value
+            }))
 
             fetchUsers()
         } catch (err) {
