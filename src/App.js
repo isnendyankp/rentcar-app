@@ -1,36 +1,47 @@
-import '../src/styles/App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Landingpage from '../src/components/landpage.jsx';
-import Searching from '../src/components/searchingpage.jsx';
-import Searchres from '../src/components/searchresult.jsx';
-import Rentpackage from '../src/components/rentpackage.jsx';
-import Signup from './components/signup';
-import Signin from './components/signin';
-import Payment from './components/payment';
-import Confirm from './components/payconfirm';
-import Ticket from './components/ticket';
-
-
+import "./App.css";
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
+import NavigationBar from "./components/SectionNavigationBar";
+import Services from "./components/SectionServices";
+import Products from "./components/SectionProducts";
+import Testimonial from "./components/SectionTestimonial";
+import Faq from "./components/SectionFaq";
+import Footer from "./components/SectionFooter";
+import CarList from "./pages/CarList";
+import DetailCar from "./pages/DetailCar";
+import PaymentCar from "./pages/PaymentCar";
+import PayInstruction from "./pages/PayInstuction";
+import Ticket from "./pages/Ticket";
+import LandingPage from "./pages/LandingPage";
+import PublicLogin from "./pages/PublicLogin";
+import PublicRegister from "./pages/PublicRegister";
+import AdminLogin from "./pages/AdminLogin";
 function App() {
-  
-    return ( 
-      <Router>
-      <Routes>
-          <Route path='/' element={<Landingpage />}/>
-          <Route exact path='/selectcar' element={<Searching />}/>
-          <Route exact path='/searchresult' element={<Searchres />}/>
-          <Route exact path='/rentpackage' element={<Rentpackage />}/>
-          <Route exact path='/signup' element={<Signup />}/>
-          <Route exact path='/signin' element={<Signin />}/>
-          <Route exact path='/payment' element={<Payment />}/>
-          <Route exact path='/payment/confirm' element={<Confirm />}/>
-          <Route exact path='/payment/confirm/ticket' element={<Ticket />}/>
-      </Routes>
-    </Router> 
-    );
-  }
-  
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <NavigationBar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/testi" element={<Testimonial />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/cars" element={<CarList />} />
+          <Route path="/cars/:id" element={<DetailCar />} />
+          <Route path="/payment/:id" element={<PaymentCar />} />
+          <Route path="/payments/:id" element={<PayInstruction />} />
+          <Route path="/ticket/:id" element={<Ticket />} />
+          <Route path="/login" element={<PublicLogin />} />
+          <Route path="/register" element={<PublicRegister />} />
+          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
+}
 
-// class App extends Component 
 export default App;
